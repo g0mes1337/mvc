@@ -8,11 +8,16 @@
     <title>Document</title>
 </head>
 <body style="background-color: antiquewhite">
-<form action="http://mvc1/login/personal" method="post">
+<form action="/login/personal" method="post">
     <div style="display: flex;justify-content: center;flex-direction: column ; align-items: center;margin-top: 350px;" >
-        <input type="text" name="ml" placeholder="mail" style="padding: 5px; margin: 15px;">
-        <input type="text" name="pswrd" placeholder="password" style="padding: 5px;margin: 15px;">
+        <input type="email" name="ml" placeholder="mail" style="padding: 5px; margin: 15px;">
+        <input type="password" name="pswrd" placeholder="password" style="padding: 5px;margin: 15px;">
         <input type="submit" style="margin: 15px;">
+    </div>
+    <div class="error" style="display: flex;justify-content: center;">
+        <?php
+                print $data;
+         ?>
     </div>
 </form>
 </body>

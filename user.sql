@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 18 2019 г., 00:34
+-- Время создания: Дек 19 2019 г., 22:39
 -- Версия сервера: 10.3.13-MariaDB-log
 -- Версия PHP: 7.1.32
 
@@ -39,7 +39,18 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`username`, `email`, `password_hash`) VALUES
-('vasia', 'vasia@mail.ru', '12345');
+('germes', 'germes@mail.ru', 'fcea920f7412b5da7be0cf42b8c93759'),
+('vasia', 'vasia@mail.ru', '827ccb0eea8a706c4c34a16891f84e7b');
+
+--
+-- Индексы сохранённых таблиц
+--
+
+--
+-- Индексы таблицы `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`username`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
