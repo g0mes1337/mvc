@@ -19,6 +19,9 @@ class Controller_login extends Controller
             if (!empty($_POST['ml']) && !empty($_POST['pswrd'])) {
                 $data = $this->model->Login($_POST['ml'],$_POST['pswrd']);
                 $this->view->generate('login_view.php', 'template_view.php', $data);
+            }else {
+                $data = $this->model->Login($_POST['ml'],$_POST['pswrd']);
+                $this->view->generate('login_view.php', 'template_view.php', $data);
             }
 
 
